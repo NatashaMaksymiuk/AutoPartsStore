@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="APS.UI.View.MyAutoPartsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             MaxHeight="350" MaxWidth="600" 
+             MinHeight="350" MinWidth="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Column="0" Grid.RowSpan="5" 
+                 ItemsSource="{Binding AllParts}" 
+                 SelectedItem="{Binding SelectedParts}"/>
+
+        <Label Grid.Row="0" Grid.Column="1" Content="Photo"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Grid.Row="0" Grid.Column="2" Source="{Binding Photo}"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="1" Grid.Column="1" Content="Name"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Name}"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="2" Grid.Column="1" Content="Price"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Price}"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="3" Grid.Column="1" Content="Number"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding Numbers}"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="4" Grid.Column="1" Content="Category"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="4" Grid.Column="2" Text="{Binding Category}"
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</UserControl>

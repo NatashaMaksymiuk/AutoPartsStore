@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="APS.UI.View.RegisterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             MinHeight="200" MinWidth="300"
+             MaxHeight="200" MaxWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+            <ColumnDefinition Width="75"></ColumnDefinition>
+            <ColumnDefinition Width="75"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" TextBlock.FontSize="13" 
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+            Name
+        </Label>
+        <Label Grid.Column="0" Grid.Row="1" TextBlock.FontSize="13" 
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+            Login
+        </Label>
+        <Label Grid.Column="0" Grid.Row="2" TextBlock.FontSize="13" 
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+            Password
+        </Label>
+        <Label Grid.Column="0" Grid.Row="3" TextBlock.FontSize="13" 
+               VerticalAlignment="Center" HorizontalAlignment="Center">
+            Confirm Password
+        </Label>
+
+        <TextBox Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"
+                 VerticalAlignment="Center" HorizontalAlignment="Left"
+                 Height="20" Width="150" Name="tb_Name"
+                 Text="{Binding Path=NewName, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <TextBox Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"
+                 VerticalAlignment="Center" HorizontalAlignment="Left"
+                 Height="20" Width="150" Name="tb_Login"
+                 Text="{Binding Path=NewLogin, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <TextBox Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"
+                 VerticalAlignment="Center" HorizontalAlignment="Left"
+                 Height="20" Width="150" Name="tb_Password"
+                 Text="{Binding Path=NewPassword, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <TextBox Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3"
+                 VerticalAlignment="Center" HorizontalAlignment="Left"
+                 Height="20" Width="150" Name="tb_ConfPassword"
+                 Text="{Binding Path=NewConfPassword, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Height="25" Width="100" 
+                Command="{Binding RegisterCommand}">
+            Register
+        </Button>
+
+        <Button Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2"
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Height="25" Width="100" Command="{Binding CancelCommand}">
+            Cancel
+        </Button>
+    </Grid>
+</UserControl>

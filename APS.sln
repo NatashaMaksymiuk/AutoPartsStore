@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APS.UI", "APS.UI\APS.UI.csproj", "{FD3CA3C6-B0EE-49F4-AE00-84396A810E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APS.DB", "APS.DB\APS.DB.csproj", "{F6BEA06D-3CDD-4120-AC61-8AE490C88896}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD3CA3C6-B0EE-49F4-AE00-84396A810E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3CA3C6-B0EE-49F4-AE00-84396A810E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3CA3C6-B0EE-49F4-AE00-84396A810E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3CA3C6-B0EE-49F4-AE00-84396A810E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BEA06D-3CDD-4120-AC61-8AE490C88896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BEA06D-3CDD-4120-AC61-8AE490C88896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BEA06D-3CDD-4120-AC61-8AE490C88896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BEA06D-3CDD-4120-AC61-8AE490C88896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
